@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo 'Spork Craft Node Buildpack Compile'
 # Exit on error
 set -e
 
