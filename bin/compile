@@ -14,4 +14,3 @@ BUILD_DIR=$1
 echo "Changing to app/src directory..."
 cd "$BUILD_DIR/app/src"
 npm install
-gulp build
