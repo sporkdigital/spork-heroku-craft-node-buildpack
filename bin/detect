@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check for a package.json file to detect a Node app
+if [ -f package.json ]; then
+  echo "Custom Node.js Buildpack"
+  exit 0
+else
+  echo "No package.json file found."
+  exit 1
+fi
