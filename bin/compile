@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Exit on error
+set -e
+
+# Log the current environment (for debugging purposes)
+echo "Node version: $(node -v)"
+echo "NPM version: $(npm -v)"
+echo "Environment Variables:"
+env
+
+# Run any custom logic here
+echo "Running custom build logic..."
+cd app/src
+npm install
+gulp build
