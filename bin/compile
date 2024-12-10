@@ -10,11 +10,13 @@ echo "Environment Variables:"
 env
 
 
-BUILD_DIR=$1
+BUILD_DIR=${1:-}
+CACHE_DIR=${2:-}
+ENV_DIR=${3:-}
+
 echo "Changing to app/src directory..."
 cd "$BUILD_DIR/app/src"
 npm install
-
 
 PROJECT_PATH=app/craft
 echo "-----> Subdir buildpack in $PROJECT_PATH"
