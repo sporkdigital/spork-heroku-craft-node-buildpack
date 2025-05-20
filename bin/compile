@@ -18,6 +18,14 @@ echo "Changing to app/src directory..."
 cd "$BUILD_DIR/app/src"
 npm install
 
+echo "Writing version.php $SOURCE_VERSION"
+cat > "$BUILD_DIR/app/craft/config/version.php" << EOF
+<?php
+return [
+    "hash" => "$SOURCE_VERSION"
+];
+EOF
+
 PROJECT_PATH=app/craft
 echo "-----> Subdir buildpack in $PROJECT_PATH"
 echo "       creating cache: $CACHE_DIR"
