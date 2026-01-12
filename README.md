@@ -28,7 +28,7 @@ heroku buildpacks:add https://github.com/sporkdigital/spork-heroku-craft-node-bu
 
 ## Version
 
-Current version: 0.2.0
+Current version: 0.2.1
 
 ## License
 
